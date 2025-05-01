@@ -48,10 +48,15 @@ class EcuacionSegundoGrado:
             return "Error! Datos no correspondientes a segundo grado."
 
         discriminante = (self.b**2)-4*self.a*self.c
-
-        calc_discriminante = math.sqrt(discriminante)
+        is_dis_negative = discriminante < 0
+        calc_discriminante = abs(discriminante)
+        calc_discriminante = math.sqrt(calc_discriminante)
         calc_discriminante /= 2*self.a
         calc_b = (-self.b)/(2*self.a)
+
+        if is_dis_negative:
+
+            return [complex(calc_b,calc_discriminante), complex(calc_b, -calc_discriminante)]
 
         raiz_1 = calc_b+calc_discriminante
         raiz_2 = calc_b - calc_discriminante
