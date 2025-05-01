@@ -13,8 +13,8 @@ class TestEcuacionSegundoGrado(unittest.TestCase):
         b = -3
         c = 2
         ecua_seg = EcuacionSegundoGrado(a,b,c)
-        resultado_e1 = 2
-        resultado_e2 = 3
+        resultado_e1 = 2.0
+        resultado_e2 = 1.0
 
         self.assertEqual([resultado_e1,resultado_e2], ecua_seg.calcular_raices())
 
@@ -23,7 +23,7 @@ class TestEcuacionSegundoGrado(unittest.TestCase):
         b = -2
         c = 1
         ecua_seg = EcuacionSegundoGrado(a, b, c)
-        resultado_e1 = resultado_e2 = 1
+        resultado_e1 = resultado_e2 = 1.0
 
         self.assertEqual([resultado_e1, resultado_e2], ecua_seg.calcular_raices())
 
@@ -50,8 +50,8 @@ class TestEcuacionSegundoGrado(unittest.TestCase):
 
     def test_EcuacionSG_raicesResultantes_datosNoNumericos(self):
         a = 'a'
-        b = 2
-        c = 1
+        b = 2.0
+        c = 1.0
         ecua_seg = EcuacionSegundoGrado(a, b, c)
 
         response = f"Error! Dato '{a}' no es numerico ni real."

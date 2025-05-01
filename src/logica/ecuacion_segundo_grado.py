@@ -3,6 +3,8 @@
 
 """
 
+import math
+
 class EcuacionSegundoGrado:
     def __init__(self,a=0,b=0,c=0):
         self.a = a
@@ -45,6 +47,14 @@ class EcuacionSegundoGrado:
         if self.a == 0:
             return "Error! Datos no correspondientes a segundo grado."
 
+        discriminante = (self.b**2)-4*self.a*self.c
 
+        calc_discriminante = math.sqrt(discriminante)
+        calc_discriminante /= 2*self.a
+        calc_b = (-self.b)/(2*self.a)
 
+        raiz_1 = calc_b+calc_discriminante
+        raiz_2 = calc_b - calc_discriminante
+
+        return [raiz_1,raiz_2]
 
