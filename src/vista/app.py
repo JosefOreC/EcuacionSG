@@ -43,10 +43,10 @@ class Vista:
                                       inf=inf, sup=sup)
         except TypeError:
             print("El dato no es valido, intente de nuevo")
-            return self.val_input(message)
+            return self.val_input(message, inf=inf, sup=sup)
         except ValueError:
             print("El dato no es valido, intente de nuevo")
-            return self.val_input(message)
+            return self.val_input(message, inf=inf, sup=sup)
 
         return dato
 
