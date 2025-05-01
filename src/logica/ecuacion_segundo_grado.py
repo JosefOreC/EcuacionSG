@@ -24,7 +24,19 @@ class EcuacionSegundoGrado:
         self.set_c(c)
         self.set_b(b)
         self.set_a(a)
-    
+
+    def get_a(self):
+        return self.a
+
+    def get_b(self):
+        return self.b
+
+    def get_c(self):
+        return self.c
+
+    def get_ecuacion(self):
+        return f"{self.a}x^2 + {self.b}x + {self.c} = 0"
+
     def validar_dato(self, dato, lista=[]):
         if not type(dato) in [float, int]:
             lista.append(dato)
