@@ -79,3 +79,6 @@ class TestEcuacionSegundoGrado(unittest.TestCase):
         resultado_e2 = complex(2.5,-1.936)
 
         self.assertEqual([resultado_e1, resultado_e2], ecua_seg.calcular_raices())
+
+if __name__ == "__main__":
+    unittest.main()
