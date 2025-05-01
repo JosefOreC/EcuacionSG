@@ -54,6 +54,9 @@ class EcuacionSegundoGrado:
         calc_discriminante /= 2*self.a
         calc_b = (-self.b)/(2*self.a)
 
+        calc_b = round(calc_b, 3)
+        calc_discriminante = round(calc_discriminante, 3)
+
         if is_dis_negative:
 
             return [complex(calc_b,calc_discriminante), complex(calc_b, -calc_discriminante)]
