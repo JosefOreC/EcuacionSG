@@ -33,8 +33,8 @@ class TestEcuacionSegundoGrado(unittest.TestCase):
         c = 2
         ecua_seg = EcuacionSegundoGrado(a,b,c)
 
-        resultado_e1 = "-1+i"
-        resultado_e2 = "-1-i"
+        resultado_e1 = complex(-1, 1)
+        resultado_e2 = complex(-1,-1)
 
         self.assertEqual([resultado_e1,resultado_e2], ecua_seg.calcular_raices())
 
@@ -64,8 +64,8 @@ class TestEcuacionSegundoGrado(unittest.TestCase):
         c = 1
         ecua_seg = EcuacionSegundoGrado(a, b, c)
 
-        resultado_e1 = "-0.5+0.866i"
-        resultado_e2 = "-0.5-0.866i"
+        resultado_e1 = complex(-0.5,0.866)
+        resultado_e2 = complex(-0.5,-0.866)
 
         self.assertEqual([resultado_e1, resultado_e2], ecua_seg.calcular_raices())
 
@@ -75,8 +75,7 @@ class TestEcuacionSegundoGrado(unittest.TestCase):
         c = 10
         ecua_seg = EcuacionSegundoGrado(a, b, c)
 
-        resultado_e1 = "2.5+1.936i"
-        resultado_e2 = "2.5-1.936i"
+        resultado_e1 = complex(2.5, 1.936)
+        resultado_e2 = complex(2.5,-1.936)
 
         self.assertEqual([resultado_e1, resultado_e2], ecua_seg.calcular_raices())
-
