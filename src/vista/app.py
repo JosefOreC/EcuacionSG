@@ -27,15 +27,19 @@ class Vista:
 
     def val_input(self, message, inf=None, sup=None):
         dato = input(message)
+        inf_mess = inf
+        sup_mess = sup
         try:
             dato = float(dato)
             is_dato_in_range = True
-            if sup:
-                is_dato_in_range = dato <= sup
-            if inf:
-                is_dato_in_range = is_dato_in_range and dato >= inf
+            if sup != None:
+                is_dato_in_range = (dato <= sup)
+            else: sup_mess = 'infinite'
+            if inf != None:
+                is_dato_in_range = is_dato_in_range and (dato >= inf)
+            else: inf_mess = 'infinite'
             if not is_dato_in_range:
-                return self.val_input(message = f"Dato fuera del rango ]{inf};{sup}[\nIntente de nuevo: ",
+                return self.val_input(message = f"Dato fuera del rango [{inf_mess};{sup_mess}]\nIntente de nuevo: ",
                                       inf=inf, sup=sup)
         except TypeError:
             print("El dato no es valido, intente de nuevo")
