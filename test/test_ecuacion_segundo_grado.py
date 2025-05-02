@@ -3,20 +3,21 @@
 """
 
 import unittest
+
 from src.logica.ecuacion_segundo_grado import EcuacionSegundoGrado
+
 
 class TestEcuacionSegundoGrado(unittest.TestCase):
     def test_EcuacionSG_raicesResultantes_Reales(self):
-
         # Forma ax^2+bx+c = 0
         a = 1
         b = -3
         c = 2
-        ecua_seg = EcuacionSegundoGrado(a,b,c)
+        ecua_seg = EcuacionSegundoGrado(a, b, c)
         resultado_e1 = 2.0
         resultado_e2 = 1.0
 
-        self.assertEqual([resultado_e1,resultado_e2], ecua_seg.calcular_raices())
+        self.assertEqual([resultado_e1, resultado_e2], ecua_seg.calcular_raices())
 
     def test_EcuacionSG_raicesResultantes_doble(self):
         a = 1
@@ -31,12 +32,12 @@ class TestEcuacionSegundoGrado(unittest.TestCase):
         a = 1
         b = 2
         c = 2
-        ecua_seg = EcuacionSegundoGrado(a,b,c)
+        ecua_seg = EcuacionSegundoGrado(a, b, c)
 
         resultado_e1 = complex(-1, 1)
-        resultado_e2 = complex(-1,-1)
+        resultado_e2 = complex(-1, -1)
 
-        self.assertEqual([resultado_e1,resultado_e2], ecua_seg.calcular_raices())
+        self.assertEqual([resultado_e1, resultado_e2], ecua_seg.calcular_raices())
 
     def test_EcuacionSG_raicesResultantes_noSegundoGrado(self):
         a = 0
@@ -64,8 +65,8 @@ class TestEcuacionSegundoGrado(unittest.TestCase):
         c = 1
         ecua_seg = EcuacionSegundoGrado(a, b, c)
 
-        resultado_e1 = complex(-0.5,0.866)
-        resultado_e2 = complex(-0.5,-0.866)
+        resultado_e1 = complex(-0.5, 0.866)
+        resultado_e2 = complex(-0.5, -0.866)
 
         self.assertEqual([resultado_e1, resultado_e2], ecua_seg.calcular_raices())
 
@@ -76,9 +77,10 @@ class TestEcuacionSegundoGrado(unittest.TestCase):
         ecua_seg = EcuacionSegundoGrado(a, b, c)
 
         resultado_e1 = complex(2.5, 1.936)
-        resultado_e2 = complex(2.5,-1.936)
+        resultado_e2 = complex(2.5, -1.936)
 
         self.assertEqual([resultado_e1, resultado_e2], ecua_seg.calcular_raices())
+
 
 if __name__ == "__main__":
     unittest.main()

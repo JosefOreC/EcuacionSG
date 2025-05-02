@@ -1,0 +1,71 @@
+[33mcommit 312a3931d49fa95d5bb868f4e603cda7cc1fa74a[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/feature/vista/inputs[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mfeature/vista/inputs[m[33m)[m
+Author: Daniel Leonardo Ore Campos <71660137@continental.edu.pe>
+Date:   Thu May 1 03:47:34 2025 -0500
+
+    Se corrigió error de lógica de val_input -> vista -> app.py.
+
+[33mcommit eaed1d9f2d4932c8727dd34b8d120d5b29a618e7[m
+Author: Daniel Leonardo Ore Campos <71660137@continental.edu.pe>
+Date:   Thu May 1 03:40:55 2025 -0500
+
+    Se corrigieron errores menores de val_input -> vista -> app.py.
+
+[33mcommit 7d844b4c2b53f2dd7ed615599afca7eda86a175e[m
+Author: Daniel Leonardo Ore Campos <71660137@continental.edu.pe>
+Date:   Thu May 1 03:27:34 2025 -0500
+
+    Se agregó toda la vista a app.py
+
+[33mcommit b72378010198cbe6dbd9a58313675a9eaab5f7a4[m[33m ([m[1;31morigin/feature/agregar_setters_getters[m[33m)[m
+Author: JOre <labe402@continental.edu.pe>
+Date:   Wed Apr 30 21:18:57 2025 -0500
+
+    Setters agregados.
+
+[33mcommit a7dda2d18643cea32ae4ea375df43624e97198e4[m
+Author: JOre <labe402@continental.edu.pe>
+Date:   Wed Apr 30 21:16:38 2025 -0500
+
+    Setters y Getters agregados
+
+[33mcommit ff1b70a7f29037600b5407eeb4bae656e8156582[m[33m ([m[1;31morigin/feature/calc_raices_complejas[m[33m)[m
+Author: JOre <labe402@continental.edu.pe>
+Date:   Wed Apr 30 21:06:01 2025 -0500
+
+    Se terminó el método calcular_raices, pruebas reales pasadas
+
+[33mcommit eae8b3467ffaff1de7d6cdb0c28df2f43e28ff7e[m
+Author: JOre <labe402@continental.edu.pe>
+Date:   Wed Apr 30 21:04:35 2025 -0500
+
+    Se terminó el método calcular_raices, pruebas reales pasadas
+
+[33mcommit 2c49ec44dc32f807db00bd154d1252f7b01235d1[m[33m ([m[1;31morigin/feature/calc_raices_reales[m[33m)[m
+Author: JOre <labe402@continental.edu.pe>
+Date:   Wed Apr 30 20:52:14 2025 -0500
+
+    Se programó el código de calcular_raices, pasó la prueba de raices reales.
+
+[33mcommit c632ece92aee507b6f7af5fef01005de02935e1b[m[33m ([m[1;31morigin/feature/armado_clase[m[33m)[m
+Author: JOre <labe402@continental.edu.pe>
+Date:   Wed Apr 30 20:07:54 2025 -0500
+
+    Armado de la clase EcuacionSegundoGrado, pruebas de datos inválidos superadas.
+
+[33mcommit d9ccb35931fa53266728cf61b681e02bbe0d4757[m[33m ([m[1;31morigin/feature/pruebas[m[33m)[m
+Author: JOre <labe402@continental.edu.pe>
+Date:   Wed Apr 30 19:28:59 2025 -0500
+
+    Corrección de pruebas
+
+[33mcommit 8d9e73c05206feb5d42e96f0d5894de1c4e8b6d6[m
+Author: JOre <labe502@continental.edu.pe>
+Date:   Wed Apr 30 11:43:15 2025 -0500
+
+    Pruebas establecidas
+
+[33mcommit 99ef40f77a9b001ce6bfde5c050f4ffc27e24f9c[m
+Author: JOre <labe502@continental.edu.pe>
+Date:   Wed Apr 30 11:16:28 2025 -0500
+
+    Armado inicial de la aplicación
